@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+}
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 16px;
+}
+.first {
+  padding: 0 0 2em 0;
+  text-align: center;
+  width: 100%;
+  background: url("./images/bg-header-desktop.png") no-repeat;
+  background-size: cover;
+}
+.first .logo {
+  text-align: center;
+  font-size: 20em;
+  color: rgb(82, 205, 205);
+}
+.title {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+button:active {
+  transform: translatey(-5px);
+  box-shadow: inset 15px 22px 50px rgba(0, 0, 0, 0.56);
+}
+
+.description {
+  padding:.5em 2em;
+  margin: auto;
+  max-width: 750px;
+  font-size: 1.2em;
+  text-align: center;
+  color: var(--Grayish-Blue);
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 1em;
+}
+.first .flex-container .flex-items {
+  width: 15em;
+  height: 4em;
+  border-radius: 2em;
+  border: none;
+  cursor: pointer;
+  color: whitesmoke;
+}
+.first .flex-container .flex-items:nth-child(1) {
+  background: var(--Strong-Cyan);
+}
+.first .flex-container .flex-items:nth-child(2) {
+  background: var(--Light-Blue);
+}
+footer .logo {
+  font-size: 2em;
+  color: var(--Strong-Cyan);
+}
+.icons i {
+  padding: 0.5em;
+}
+footer{
+  text-align: center;
+}
+.second .flex-container .flex-items:nth-child(1){
+  
+  padding: 2em;
+  background: url("./images/image-computer.png") no-repeat;
+  background-size: contain ;
+  background-position: center;
+  width: 50%;
+  height: 50vh;
+}
+section{
+  padding: 2em;
+}
+.second .flex-container{
+  text-align: center;
+}
+.title-sm{
+  font-size: 20px;
+  font-weight: 600;
+}
+.second .flex-container{
+  width: 100%;
+  padding: 2em;
+}
+.three .flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-device{
+  background: url("./images/image-devices.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+}
+.four .flex-container .container{
+  width: 250px;
+  max-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  border-radius: 15px;
+  box-shadow: inset 5px 5px 2px rgba(0, 0, 0, 0.386),5px 5px 2px rgba(0, 0, 0, 0.386);
+  gap: 2.5em;
+  padding: 1em;
+
+}
+.four .flex-container .container .description {
+  padding:0 0em;
+  margin: 0;
+  width: auto;
+  font-size: 1em;
+  text-align: center;
+  color: var(--Grayish-Blue);
+}
+.five .flex-container{
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  gap:1.5em ;
+}
+.five .flex-items{
+  width:auto;
+}
+.six .flex-container .flex-items {
+  width: 15em;
+  height: 4em;
+  border-radius: 2em;
+  border: none;
+  cursor: pointer;
+  color: whitesmoke;
+}
+.six .flex-container .flex-items:nth-child(1) {
+  background: var(--Strong-Cyan);
+}
+.six .flex-container .flex-items:nth-child(2) {
+  background: var(--Light-Blue);
+}
+footer .flex-container{
+  display: flex;
+  align-items: center;
+width: 100%;
+  gap: 0em;
+}
+footer{
+  background: #F1F1F1;
+}
+footer .flex-items{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+}
+@media screen and (min-width: 768px) {
+  .first {
+    background: url("./images/bg-header-mobile.png") no-repeat;
+    background-size: cover;
+  }
+  .flex-container {
+    flex-flow: row;
+  }
+  .second .flex-container{
+    gap: 2em;
+    text-align:justify;
+  }
+  .four .flex-container{
+    justify-content: space-evenly;
+    gap: 0em;
+  }
+  .five .flex-container{
+    flex-direction: row;
+    width: 100%;
+    gap: 0em;
+    display: flex;
+    flex-flow: wrap;
+    height: 100%;
+  }
+  footer .flex-container{
+    display: flex;
+    width: 100%;
+    flex-basis: 2000%;
+    height: 10vh;
+    gap: 0em;
+  }
+  footer .flex-container:nth-child(2) .flex-items{
+    display: flex;
+    justify-content: space-around;
+  }
+
+}
